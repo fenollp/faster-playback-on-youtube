@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Faster Playback on YouTube",
+  "version": "1.0.0",
+  "description": "YouTube's < & > only go so far, let's have them go to infinity.",
+
+  "content_scripts": [{
+    "all_frames": true,
+    "js": [ "ke.js" ],
+    "matches": [ "https://www.youtube.com/*" ],
+    "run_at": "document_start"
+  }]
+}
