@@ -9,7 +9,7 @@ function doKeyPress(e){
 	if (e.key != '>') { return; }
 	var video = document.getElementsByClassName("video-stream html5-main-video")[0];
 	if (video.playbackRate < 2.) { return; }
-	var pr = video.playbackRate += .5;
+	var pr = video.playbackRate += .25;
 
     // console.log('Pressed '+e.key+' PR: '+pr);
 
