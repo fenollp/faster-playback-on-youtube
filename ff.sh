@@ -9,4 +9,5 @@ done
 
 cat chrome/manifest.json \
 	| sed 's%"manifest_version": 3,%"manifest_version": 2,%' \
+	| sed -z 's%,\n    "world": "MAIN"%%' \
 	>firefox/manifest.json
